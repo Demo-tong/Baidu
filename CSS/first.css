@@ -1,0 +1,122 @@
+body{
+		margin:0;
+		padding:0;
+		background:#ccc;
+	}
+	/*导航条样式设置*/
+	.nav_list{
+		width:100%;
+		height:60px;
+		top:0;
+		background:#122;
+		position:relative;
+	}
+	.logo img{
+		position:absolute;
+		left:0;
+		top:10px;
+	}
+	.li_list{
+		position:absolute;
+		right:0;
+		bottom:10px;
+		float:right;
+	}
+	div.li_list>ul li{
+		margin:10px;
+		float:left;
+	}
+	div.li_list a{
+		color:white;
+	}
+	/*内容样式设置*/
+	#first,#second,#third,#fourth,#fifth{
+		height:50%;
+		border:1px solid gray;
+		border-bottom:2px solid gray;
+		margin:10px;
+		background:white;
+		text-indent:2em;
+	}
+	div>p,span{
+		line-height:2em;
+		padding:10px;
+	}
+	/*第二个文章内容*/
+	div#second{
+		position:relative;
+	}
+	#ul_list{
+		position:absolute;
+		float:left;
+		bottom:0;
+	}
+	#ul_list>ul li{
+		list-style: none;
+		margin:10px;
+	}
+	/*图片内容样式设置*/
+	.pic_list{
+		float:left;
+		left:50px;
+	}
+	.pic{
+		width:200px;
+		height:300px;
+		margin:20px;
+		border:1px solid #cce;
+	}
+	.pic>img{
+		width:40%;
+		height:60%;
+		padding:10px;
+		margin:0 40px;
+	}
+	.pic>p{
+		text-indent:0;
+		text-align:center;
+	}
+	/*表格样式设置*/
+	div#fourth li{
+		font-size:20px;
+		font-family:"黑体";
+		text-indent:0;
+	}
+	div#tabl>table{
+		width:100%;
+	}
+	td{
+		text-indent:0;
+		text-align:center;
+		border:1px solid gray;
+		margin:0;
+	}
+	#fourth div#tabl>table>tbody:nth-child(3){
+		width:20%;
+	}
+	#fourth div#tabl>table>tbody>tr:nth-child(1){
+		background:black;
+		color:white;
+	}
+	#fourth div#tabl>table>tbody>tr:nth-child(6){
+		background:#eee;
+		color:black;
+	}
+	/*侧栏样式设置*/
+	/* .side{
+		margin:20px;
+		border-left:2px solid gray;
+	}
+	.side h2{
+		text-indent:10px;
+		font-size:20px;
+		font-family:"黑体";
+	}
+	.all{
+		margin:0;
+		border:1px dotted yellow;
+		position:absolute;
+		left:50%;
+		right:50%;
+		transform: :translate(-50%, -50%);
+	} */
