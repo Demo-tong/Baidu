@@ -1,0 +1,97 @@
+	/*设置菜单的样式，横向菜单与纵向菜单。若使用横向菜单则为菜单包含元素设置一个类值drop_menu
+	若使用纵向菜单，则为菜单包含元素设置两个类值（drop_menu和vertical）
+	*/
+
+	/*设置顶级菜单样式*/
+	/*设置垂直菜单*/
+	.drop_menu.vertical{width: 8em;}
+	.drop_menu.vertical li a{
+		border-right-style: none;
+		border-top-style: solid;
+	}
+	.drop_menu.vertical li li a{
+		border-left-style: solid;
+	}
+	.drop_menu.vertical ul,.drop_menu.vertical li{
+		float:none;
+	}
+	.drop_menu.vertical li ul{
+		left: 100%;
+		top: 0;
+	}
+	/*视觉样式*/
+	.drop_menu{
+		font-family: 1em helvetica,arial,sans-serif;
+	}
+	.drop_menu a{
+		display: block;
+		height: 10px;
+		color: #555;
+		background-color: #eee;
+		padding: 2em 1em;
+		border-width: 3px;
+		border-color: transparent;
+	}
+	.drop_menu li:hover>a{
+		color: #fff;
+		background-color: #aaa;
+	}
+	.drop_menu a:active{
+		background: #fff;
+		color: #ccc;
+	}
+
+	/*添加功能样式*/
+	.drop_menu *{
+		margin: 0;
+		padding: 0;
+	}
+	.drop_menu ul{
+		float: left;/*强制包含li元素，若采用overflow，则下级菜单不会显示*/
+	}
+	.drop_menu li{
+		float: left;
+		list-style-type: none;
+		position: relative;/*为子菜单提供定位上下文*/
+	}
+	.drop_menu li a{
+		display: block;
+		border-right-style: solid;
+		background-clip: padding-box;
+		text-decoration: none;
+	}
+	.drop_menu li:last-child a{
+		border-right-style: none;
+	}
+	.drop_menu li ul{
+		display: none;
+	}
+	/*设置二级菜单样式*/
+	/*添加视觉样式*/
+	.drop_menu li ul{width: 9em;}
+	.drop_menu li li a{
+		border-right-style: none;
+		border-top-style: solid;
+	}
+	/*添加功能样式*/
+	.drop_menu li ul{
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 100%;
+	}
+	.drop_menu li:hover>ul{
+		display: block;
+	}
+	.drop_menu li li{
+		float: none;
+	}
+	.drop_menu li li ul{
+		display: none;/*继续隐藏三级菜单*/
+	}
+	/*设置三级菜单的位置*/
+	.drop_menu li li ul{
+		position: absolute;
+		left: 100%;
+		top: 0;
+	}
